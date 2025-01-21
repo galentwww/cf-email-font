@@ -12,7 +12,6 @@
     - Magic Links
 - 通过 KV 存储验证码信息
 - 标准 OIDC 验证保护
-- 支持 Bark 通知推送
 - 可部署在 Vercel 平台
 
 ## 部署步骤
