@@ -102,7 +102,12 @@ const VerificationList = () => {
   const fetchCodes = async () => {
     try {
       const apiEndpoint = process.env.NEXT_PUBLIC_API_ENDPOINT
-      const response = await fetch(`${apiEndpoint}/codes`);
+      const apiToken = process.env.NEXT_PUBLIC_API_TOKEN
+      const response = await fetch(`${apiEndpoint}/codes`, {
+        headers: {
+          'Authorization': `Bearer ${apiToken}`
+        }
+      });
       const data = await response.json();
       setCodes(data);
       setLastRefreshTime(new Date());
