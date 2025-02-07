@@ -12,6 +12,10 @@ const nextConfig = {
         },
         {
           protocol: 'https',
+          hostname: 'haloassest-1254398565.cos.ap-beijing.myqcloud.com',
+        },
+        {
+          protocol: 'https',
           hostname: 'galentwww-1257718180.file.myqcloud.com',
         },
         {
